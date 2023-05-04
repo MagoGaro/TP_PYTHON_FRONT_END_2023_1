@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
+    <title>Arregla Tu Ropa</title>
+</head>
+<body>
+    <header>
+		<nav>
+			<section name="logo">
+				<img src="../assets/img/logo.png" alt="" class="logo">
+			</section>
+			<input type="checkbox" id="check">
+			<label for="check" class="bar-btn">
+				<i class="fa-solid fa-bars"></i>
+			</label>
+			<ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./aboutme.html">Nosotros</a></li>
+				<li><a href="#">?</a></li>
+				<li><a class="active" href="../html/contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="contacto">
+		<section>
+			<form action="#" method="get" class="formularioContacto">
+				<fieldset>
+					<legend>Informacion de Contacto</legend>
+
+					<label for="name" class="l1">Nombre</label>
+					<input type="text" id="name" placeholder="Ingresa tu nombre" required>
+
+					<label for="lastname" class="l1">Apellido</label>
+					<input type="text" id="lastname" placeholder="Ingresa tu apellido" required>
+
+					<label for="mail" class="l1">Correo Electronico</label>
+					<input type="email" id="mail" placeholder="Ingresa tu email" required>
+
+					<label for="telephone" class="l1">Numero de Telefono</label>
+					<input type="number" id="telephone" placeholder="Ingresa tu telefono|solo numeros" required>
+
+					<label for="description" class="l2">Motivo de la consulta</label>
+					<textarea name="description" id="description" cols="30" rows="10" maxlength="1000" placeholder="Contanos lo que necesitas (Maximo 1000 Caracteres)" required></textarea>
+				</fieldset>
+			</form>
+
+			<button>Enviar</button>
+		</section>
+	</main>
+</body>
+</html>
