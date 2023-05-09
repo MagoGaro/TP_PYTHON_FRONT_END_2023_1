@@ -9,6 +9,9 @@
 	text-decoration: none;
     box-sizing: border-box;
 }
+body{
+    background-color: #fff;
+}
 
 /* Estilo Header */
 
@@ -106,11 +109,12 @@ nav{
 	display: flex;
 	width: 400%;
 	height: 22.5rem;
-	margin-left: -100%;
+	margin-left:-100%;
 }
 
 .sliderSection{
 	width: 100%;
+    margin: auto;
 }
 
 .sliderImg{
@@ -147,6 +151,83 @@ nav{
 }
 
 /*Fin Slider*/
+
+/* Servicios */
+.servicios{
+    margin: 2rem 0;
+    text-align: center;
+    justify-content: center;
+}
+.servicios article{
+    position: relative;
+}
+.card {
+    width: 80%;
+    height: 5rem;
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 1rem auto;
+   }
+   
+.shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+   } 
+
+.serviz{
+    display: inline-block;
+    width: 49%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.serviz p{
+    display: none;
+}
+.servder, .servder2, .servder3, .servder4, .servder5{
+    display: inline-block;
+    width: 5rem;
+    height: 4rem;
+    background-image:url("../assets/img/ico1-removebg-preview.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.servder2{
+    background-image:url("../assets/img/ico5-removebg-preview.png");
+}
+
+.servder3{
+    background-image:url("../assets/img/ico4-removebg-preview.png");
+}
+
+.servder4{
+    background-image:url("../assets/img/ico3-removebg-preview.png");
+}
+
+.servder5{
+    background-image:url("../assets/img/ico2-removebg-preview.png");
+}
+
+
+/* Pie*/
+
+footer{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+
+
 
 /* Hoja de contacto */
 .contacto{
