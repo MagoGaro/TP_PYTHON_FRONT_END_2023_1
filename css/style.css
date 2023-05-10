@@ -184,10 +184,12 @@ nav{
     left: 30%;
     transform: translate(-50%, -50%);
 }
-
-.serviz p{
-    display: none;
+.abrirP{
+    width: 75%;
+    height: auto;
+    display: none; 
 }
+
 .servder, .servder2, .servder3, .servder4, .servder5{
     display: inline-block;
     width: 5rem;
@@ -247,6 +249,11 @@ footer{
     padding: 1rem 0;
 }
 
+input:focus {
+    outline: 0;
+    border-color: #6ee5ee;
+}
+
 .formularioContacto fieldset input, .formularioContacto fieldset label{
     display: inline-block;
     
@@ -285,3 +292,47 @@ input[type=number] { -moz-appearance:textfield; }
     width: 50%;
     
 }
+
+.error {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+/* Seccion mapas*/
+.mapas{
+    margin: 1rem 0;
+}
+
+.mapas h2{
+    text-align: center;
+}
+
+.fa-whatsapp{
+    color:green;
+}
+
+.cmap{
+    margin: 1rem 0;
+    
+}
+.infomap{
+    width: 90%;
+    height: auto;
+    background-color: #f9f8e7;
+    display: block;
+}
+
+.infomap h3{
+    text-align: center;
+}
+
+.map{
+    display: block;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+

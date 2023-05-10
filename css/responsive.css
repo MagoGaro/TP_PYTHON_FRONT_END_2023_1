@@ -1,6 +1,6 @@
 /* Estilo Escritorio */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1350px){
     .logo{
         margin-left: 50px;
         transition: all .5s;
@@ -10,11 +10,19 @@
         height: 100px;
     }
 
+    .titulo{
+        width: 33%;
+    }
+    .subTitulo{
+        width: 80%;
+    }
+
     .bar-btn{
         display: none;
     }
 
     .menu{
+        width: 33%;
         position: relative;
         height: 100px;
         top: 0;
@@ -38,5 +46,14 @@
 
    .slider-frame{
     display: none;
+   }
+
+   .containerSlider{
+    width: 30%;
+    margin: 1rem 5%;
+   }
+
+   .sliderSection{
+    width: 22.5%;
    }
 }
