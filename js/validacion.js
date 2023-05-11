@@ -98,6 +98,7 @@ function validandoAndo() {
 // evento para enviar formulario a la db
 
 const formulario = document.getElementById('formulario');
+const aprobado = document.getElementById('pasoLaRevision');
 const date = new Date();
 let fechita = date.toLocaleString()
 
@@ -126,7 +127,8 @@ formulario.addEventListener('submit', async (e) => {
             console.log(error);
         }
 
-        //aca cambiar las clases para ocultar
+        aprobado.classList.remove('oculto');
+        formulario.classList.add('oculto');
     }
 
 });

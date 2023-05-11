@@ -16,9 +16,12 @@ body{
 /* Estilo Header */
 
 header{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.75);
     width: 100%;
     margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .logo{
@@ -60,7 +63,7 @@ nav{
     height: 0vh;
     background-color: rgba(0, 0, 0, .95);
     text-align: center;
-    z-index: 100;
+    z-index: 4;
 }
 
 .menu li{
@@ -153,6 +156,7 @@ nav{
 /*Fin Slider*/
 
 /* Servicios */
+
 .servicios{
     margin: 2rem 0;
     text-align: center;
@@ -230,6 +234,7 @@ footer{
 
 
 
+/* -------------------------------------------------------------------------- */
 
 /* Hoja de contacto */
 .contacto{
@@ -250,7 +255,7 @@ footer{
 }
 
 input:focus {
-    outline: 0;
+    outline: 1;
     border-color: #6ee5ee;
 }
 
@@ -283,7 +288,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 .formularioContacto fieldset textarea{
     width: 100%;
-    height: auto;
+    height: 7rem;
     resize: none;
 }
 
@@ -302,7 +307,35 @@ input[type=number] { -moz-appearance:textfield; }
     font-size: 9px;
     height: 13px;
 }
+
+.imgder{
+    display: none;
+}
+
+/* Cartel Enviado */
+
+.aprobado{
+    color: #13a31f;
+    height: 20rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.tilde{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #13a31f;
+    border-radius: 50%;
+    margin: 4rem auto;
+    font-size: 3rem;
+}
+
+.oculto{
+    display: none;
+}
+
 /* Seccion mapas*/
+
 .mapas{
     margin: 1rem 0;
 }

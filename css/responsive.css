@@ -56,4 +56,29 @@
    .sliderSection{
     width: 22.5%;
    }
+   .formularioContacto{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid green;
+   }
+   .imgder{
+    width: 50%;  
+    display: inline-block;
+    border: 1px solid blue;
+   }
+
+   .imgder img{
+    width: 70%;
+   }
+   .mapas{
+    margin: 1rem auto;
+    border: 1px solid black;
+   }
+
+   .cmap{
+    width: 25%;
+    border: 1px solid red;
+    margin: 1.2rem 2rem;
+    display: inline-block;
+   }
 }
