@@ -22,7 +22,7 @@
     }
 
     .menu{
-        width: 33%;
+        width: 35%;
         position: relative;
         height: 100px;
         top: 0;
@@ -56,29 +56,35 @@
    .sliderSection{
     width: 22.5%;
    }
-   .formularioContacto{
-    width: 45%;
-    display: inline-block;
-    border: 1px solid green;
-   }
-   .imgder{
-    width: 50%;  
-    display: inline-block;
-    border: 1px solid blue;
+
+   .formu{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.5 3rem;
+    text-align: center;
    }
 
-   .imgder img{
-    width: 70%;
+   .formularioContacto{
+    display: inline-block;
+    width: 45%;
+    margin: 0.5rem 1rem;
    }
+
+   .imgder{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+   }
+
    .mapas{
+    width: 95%;
     margin: 1rem auto;
-    border: 1px solid black;
+    padding: 0.5rem 4rem;
    }
 
    .cmap{
-    width: 25%;
-    border: 1px solid red;
-    margin: 1.2rem 2rem;
+    width: 30%;
+    margin: 0.5rem 1rem;
     display: inline-block;
    }
 }
