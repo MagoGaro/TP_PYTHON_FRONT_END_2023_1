@@ -1,20 +1,26 @@
+@media screen and (min-width: 768px){
+        
+    .titulo{
+            font-size: 1.5rem;
+        }
+        
+       .cmap{
+        width: 45%;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+       }
+}
+
+
 /* Estilo Escritorio */
 
 @media screen and (min-width: 1350px){
     .logo{
-        margin-left: 50px;
         transition: all .5s;
     }
 
     nav {
         height: 100px;
-    }
-
-    .titulo{
-        width: 33%;
-    }
-    .subTitulo{
-        width: 80%;
     }
 
     .bar-btn{
@@ -70,21 +76,31 @@
     margin: 0.5rem 1rem;
    }
 
+   .cmap{
+    width: 30%;
+   }
+
    .imgder{
     display: inline-block;
     width: 40%;
     text-align: center;
    }
 
-   .mapas{
-    width: 95%;
-    margin: 1rem auto;
-    padding: 0.5rem 4rem;
+   .imagega{
+    width: 10%;
    }
-
-   .cmap{
-    width: 30%;
-    margin: 0.5rem 1rem;
-    display: inline-block;
+   
+   .imagega figcaption {
+    left: 10%;
+    top: 10%;
    }
+   .imagega.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
 }

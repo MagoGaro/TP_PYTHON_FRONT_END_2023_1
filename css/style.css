@@ -1,5 +1,6 @@
 /* Importacion de Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
 /* Reseteo de Estilos */
 *{
@@ -17,7 +18,9 @@ body{
 
 header{
     background-color: rgba(255, 255, 255, 0.75);
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
     position: sticky;
     top: 0;
@@ -25,21 +28,20 @@ header{
 }
 
 .logo{
-    width: 4rem;
-    height: auto;
-    margin-left: 20px;
-    margin-top: 10px;
+    width: 3.5rem;
+    margin: .5rem;
     transition: all .5s;
 }
 .titulo{
-    width: 65%;
+    width: 55%;
     text-align: center;
     font-family: 'Vidaloka', serif;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
+
 .subTitulo{
     font-size: 0.8rem;
-    text-align: right;
+    text-align: center;
 }
 
 nav{
@@ -157,6 +159,9 @@ nav{
 
 /* Servicios */
 
+main{
+    margin-bottom: 2rem;
+}
 .servicios{
     margin: 2rem 0;
     text-align: center;
@@ -226,12 +231,35 @@ nav{
 /* Pie*/
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.9rem auto 0 auto;
     background-color: #000;
-    width: 100%;
+    width: 90%;
     color: #fff;
-    text-align: center;
+    font-size: 1rem;
 }
 
+footer .copy, .redes{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+footer .redes h4{
+    margin: 0.3rem;
+}
+
+.redes a{
+    display: block;
+    color: #ad87ec;
+}
+
+.redes a span{
+    color: #fff;
+}
 
 
 /* -------------------------------------------------------------------------- */
@@ -335,11 +363,9 @@ input[type=number] { -moz-appearance:textfield; }
 .mapas{
     width: 100%;
     margin: 1rem 0;
-}
-
-.mapas h2{
     text-align: center;
 }
+
 
 .fa-whatsapp{
     color:green;
@@ -354,11 +380,13 @@ input[type=number] { -moz-appearance:textfield; }
     height: auto;
     background-color: #f9f8e7;
     display: block;
+    text-align: left;
 }
 
 .infomap h3{
     text-align: center;
 }
+
 
 .map{
     display: block;
@@ -366,3 +394,68 @@ input[type=number] { -moz-appearance:textfield; }
     margin: 0.5rem auto;
 }
 
+/* Hoja Galeria*/
+.galeaga{
+    text-align: center;
+}
+
+.galeaga article{
+    display: flex;
+}
+
+.imagega {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    width: 80%;
+    overflow: hidden;
+    margin: 15px auto;
+    position: relative;
+  }
+  
+  figure img {
+    border-radius: 5px;
+    height: 100%;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .imagega figcaption {
+    color: #555;
+    font-family: 'Exo';
+    height: 100%;
+    left: 25%;
+    line-height: 250px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 25%;
+    transition: all .23s ease;
+  }  
+
+.imagega.fade figcaption {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:active > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:active > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* hoja nosotros */
+
+  .card-lg{
+    height: auto;
+  }
+  .card-lg article{
+    text-align: justify;
+    margin: 1.5rem 0;  
+}
+  .card-lg h2{
+    text-align: center;
+    margin: 2rem 0;
+  }
