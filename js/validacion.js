@@ -99,6 +99,7 @@ function validandoAndo() {
 
 const formulario = document.getElementById('formulario');
 const aprobado = document.getElementById('pasoLaRevision');
+const formu = document.getElementById('formu');
 const date = new Date();
 let fechita = date.toLocaleString()
 
@@ -128,7 +129,7 @@ formulario.addEventListener('submit', async (e) => {
         }
 
         aprobado.classList.remove('oculto');
-        formulario.classList.add('oculto');
+        formu.classList.add('oculto');
     }
 
 });

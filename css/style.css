@@ -241,10 +241,6 @@ footer{
     margin-top: 1rem;
 }
 
-.contacto section{
-    width: 100%;
-}
-
 .formularioContacto{
     text-align: center;
 }
@@ -337,6 +333,7 @@ input[type=number] { -moz-appearance:textfield; }
 /* Seccion mapas*/
 
 .mapas{
+    width: 100%;
     margin: 1rem 0;
 }
 
