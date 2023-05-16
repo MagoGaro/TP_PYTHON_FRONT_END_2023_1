@@ -46,8 +46,15 @@
     }
 
     .menu li a{
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #000;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .subTitulo{
+        font-size: 1.5rem;
     }
 
    .slider-frame{
@@ -56,12 +63,37 @@
 
    .containerSlider{
     width: 30%;
-    margin: 1rem 5%;
+    align-items: center;
+    justify-content: center;
    }
 
    .sliderSection{
     width: 22.5%;
    }
+
+   .oferta{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+
+}
+
+.oferta  img{
+    width: 60%;
+}
+
+.servicios h2{
+    font-size: 2.5rem;
+}
+
+.serviz h3{
+    font-size: 1.5rem;
+}
+
+.abrirP p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
 
    .formu{
     width: 90%;
@@ -103,4 +135,14 @@
     opacity: 1;
     visibility: visible;
   }
+
+  .aboutme section article h2{
+    font-size: 2.5rem;
+  }
+
+  .aboutme p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
 }

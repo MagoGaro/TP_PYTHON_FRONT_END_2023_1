@@ -1,6 +1,7 @@
 /* Importacion de Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Reseteo de Estilos */
 *{
@@ -9,9 +10,16 @@
 	list-style: none;
 	text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
 }
+
 body{
     background-color: #fff;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilo Header */
@@ -35,7 +43,7 @@ header{
 .titulo{
     width: 55%;
     text-align: center;
-    font-family: 'Vidaloka', serif;
+
     font-size: 1.3rem;
 }
 
@@ -157,12 +165,19 @@ nav{
 
 /*Fin Slider*/
 
+.oferta{
+    display: none;
+
+}
+
+
 /* Servicios */
 
 main{
     margin-bottom: 2rem;
 }
 .servicios{
+    width: 100%;
     margin: 2rem 0;
     text-align: center;
     justify-content: center;
