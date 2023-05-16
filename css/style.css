@@ -1,5 +1,7 @@
 /* Importacion de Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Reseteo de Estilos */
 *{
@@ -8,16 +10,25 @@
 	list-style: none;
 	text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
 }
+
 body{
     background-color: #fff;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Estilo Header */
 
 header{
     background-color: rgba(255, 255, 255, 0.75);
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
     position: sticky;
     top: 0;
@@ -25,21 +36,20 @@ header{
 }
 
 .logo{
-    width: 4rem;
-    height: auto;
-    margin-left: 20px;
-    margin-top: 10px;
+    width: 3.5rem;
+    margin: .5rem;
     transition: all .5s;
 }
 .titulo{
-    width: 65%;
+    width: 55%;
     text-align: center;
-    font-family: 'Vidaloka', serif;
-    font-size: 1.7rem;
+
+    font-size: 1.3rem;
 }
+
 .subTitulo{
     font-size: 0.8rem;
-    text-align: right;
+    text-align: center;
 }
 
 nav{
@@ -155,9 +165,19 @@ nav{
 
 /*Fin Slider*/
 
+.oferta{
+    display: none;
+
+}
+
+
 /* Servicios */
 
+main{
+    margin-bottom: 2rem;
+}
 .servicios{
+    width: 100%;
     margin: 2rem 0;
     text-align: center;
     justify-content: center;
@@ -226,22 +246,63 @@ nav{
 /* Pie*/
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.9rem auto 0 auto;
     background-color: #000;
-    width: 100%;
+    width: 90%;
     color: #fff;
-    text-align: center;
+    font-size: 1rem;
 }
 
+footer .copy, .redes{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+}
 
+footer .redes h4{
+    margin: 0.3rem;
+}
+
+.redes a{
+    display: block;
+    color: #ad87ec;
+    margin: 0.5rem;
+}
+
+.redes a span{
+    color: #fff;
+}
+.developers{
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content:space-evenly;
+}
+.developers p{
+    text-align: center;
+}
 
 /* -------------------------------------------------------------------------- */
 
 /* Hoja de contacto */
 .contacto{
     margin-top: 1rem;
+    
+}
+
+.formu{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
 }
 
 .formularioContacto{
+    width: 95%;
     text-align: center;
 }
 
@@ -335,11 +396,9 @@ input[type=number] { -moz-appearance:textfield; }
 .mapas{
     width: 100%;
     margin: 1rem 0;
-}
-
-.mapas h2{
     text-align: center;
 }
+
 
 .fa-whatsapp{
     color:green;
@@ -354,11 +413,13 @@ input[type=number] { -moz-appearance:textfield; }
     height: auto;
     background-color: #f9f8e7;
     display: block;
+    text-align: left;
 }
 
 .infomap h3{
     text-align: center;
 }
+
 
 .map{
     display: block;
@@ -366,3 +427,245 @@ input[type=number] { -moz-appearance:textfield; }
     margin: 0.5rem auto;
 }
 
+/* Hoja Galeria*/
+.galeaga{
+    text-align: center;
+}
+
+.galeaga article{
+    display: flex;
+}
+
+.imagega {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    width: 80%;
+    overflow: hidden;
+    margin: 15px auto;
+    position: relative;
+  }
+  
+  figure img {
+    border-radius: 5px;
+    height: 100%;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .imagega figcaption {
+    color: #555;
+    font-family: 'Exo';
+    height: 100%;
+    left: 25%;
+    line-height: 250px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 25%;
+    transition: all .23s ease;
+  }  
+
+.imagega.fade figcaption {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:active > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:active > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* hoja nosotros */
+
+  .aboutme section article h2{
+    font-size: 2.3rem;
+  }
+
+  .aboutme p{
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+  .card-lg{
+    height: auto;
+  }
+  .card-lg article{
+    text-align: justify;
+    margin: 1.5rem 0;  
+}
+  .card-lg h2{
+    text-align: center;
+    margin: 2rem 0;
+  }
+  @media screen and (min-width: 453px){
+        
+    .titulo{
+            font-size: 1.5rem;
+        }
+
+        .containerSlider{
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+           }
+        
+           .sliderSection{
+            width: 22.5%;
+           }
+
+           .oferta{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+        
+        }
+
+        .oferta  img{
+            width: 100%;
+        }
+
+        .formu{
+            justify-content: space-between;
+        }
+
+        .developers{
+            width: 70%;
+        }
+
+       .cmap{
+        width: 45%;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+       }
+}
+
+
+/* Estilo Escritorio */
+
+@media screen and (min-width: 1000px){
+    .logo{
+        transition: all .5s;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .menu{
+        width: 65%;
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .menu li a{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .subTitulo{
+        font-size: 1.5rem;
+    }
+
+   .slider-frame{
+    display: none;
+   }
+   .containerSlider{
+    width: 30%;
+   }
+   .sliderSection{
+    width: 21%;
+   }
+
+   .oferta  img{
+    width: 50%;
+}
+
+.servicios h2{
+    font-size: 2.5rem;
+}
+
+.serviz h3{
+    font-size: 1.5rem;
+}
+
+.abrirP p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+   .formu{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.5 3rem;
+    text-align: center;
+   }
+
+   .formularioContacto{
+    display: inline-block;
+    width: 45%;
+    margin: 0.5rem 1rem;
+   }
+
+   .cmap{
+    width: 30%;
+   }
+
+   .imgder{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+   }
+
+   .imagega{
+    width: 10%;
+   }
+   
+   .imagega figcaption {
+    left: 10%;
+    top: 10%;
+   }
+   .imagega.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .aboutme section article h2{
+    font-size: 2.5rem;
+  }
+
+  .aboutme p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .developers{
+    width: 40%;
+}
+
+}
