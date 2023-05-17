@@ -1,20 +1,26 @@
+@media screen and (min-width: 768px){
+        
+    .titulo{
+            font-size: 1.5rem;
+        }
+        
+       .cmap{
+        width: 45%;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+       }
+}
+
+
 /* Estilo Escritorio */
 
 @media screen and (min-width: 1350px){
     .logo{
-        margin-left: 50px;
         transition: all .5s;
     }
 
     nav {
         height: 100px;
-    }
-
-    .titulo{
-        width: 33%;
-    }
-    .subTitulo{
-        width: 80%;
     }
 
     .bar-btn{
@@ -40,8 +46,15 @@
     }
 
     .menu li a{
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #000;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .subTitulo{
+        font-size: 1.5rem;
     }
 
    .slider-frame{
@@ -50,12 +63,37 @@
 
    .containerSlider{
     width: 30%;
-    margin: 1rem 5%;
+    align-items: center;
+    justify-content: center;
    }
 
    .sliderSection{
     width: 22.5%;
    }
+
+   .oferta{
+    display: flex;
+    width: 55%;
+    justify-content: center;
+
+}
+
+.oferta  img{
+    width: 60%;
+}
+
+.servicios h2{
+    font-size: 2.5rem;
+}
+
+.serviz h3{
+    font-size: 1.5rem;
+}
+
+.abrirP p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
 
    .formu{
     width: 90%;
@@ -70,21 +108,41 @@
     margin: 0.5rem 1rem;
    }
 
+   .cmap{
+    width: 30%;
+   }
+
    .imgder{
     display: inline-block;
     width: 40%;
     text-align: center;
    }
 
-   .mapas{
-    width: 95%;
-    margin: 1rem auto;
-    padding: 0.5rem 4rem;
+   .imagega{
+    width: 10%;
    }
+   
+   .imagega figcaption {
+    left: 10%;
+    top: 10%;
+   }
+   .imagega.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
 
-   .cmap{
-    width: 30%;
-    margin: 0.5rem 1rem;
-    display: inline-block;
-   }
+  .aboutme section article h2{
+    font-size: 2.5rem;
+  }
+
+  .aboutme p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
 }

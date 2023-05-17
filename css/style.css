@@ -261,6 +261,7 @@ footer .copy, .redes{
     width: 100%;
     text-align: center;
     margin: 0.5rem;
+
 }
 
 footer .redes h4{
@@ -271,6 +272,21 @@ footer .redes h4{
     display: block;
     color: #ad87ec;
     margin: 0.5rem;
+
+}
+
+footer .redes h4{
+    margin: 0.3rem;
+}
+
+.redes a{
+    display: block;
+    color: #ad87ec;
+}
+
+.redes a span{
+    color: #fff;
+
 }
 
 .redes a span{
@@ -481,6 +497,7 @@ input[type=number] { -moz-appearance:textfield; }
 
   /* hoja nosotros */
 
+
   .aboutme section article h2{
     font-size: 2.3rem;
   }
@@ -489,6 +506,8 @@ input[type=number] { -moz-appearance:textfield; }
     line-height: 2rem;
     font-size: 1.3rem;
   }
+
+
   .card-lg{
     height: auto;
   }
@@ -499,6 +518,7 @@ input[type=number] { -moz-appearance:textfield; }
   .card-lg h2{
     text-align: center;
     margin: 2rem 0;
+
   }
   @media screen and (min-width: 453px){
         
@@ -669,3 +689,6 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 }
+
+  }
+
