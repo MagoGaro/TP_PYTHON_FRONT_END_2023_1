@@ -261,6 +261,18 @@ footer .copy, .redes{
     width: 100%;
     text-align: center;
     margin: 0.5rem;
+
+}
+
+footer .redes h4{
+    margin: 0.3rem;
+}
+
+.redes a{
+    display: block;
+    color: #ad87ec;
+    margin: 0.5rem;
+
 }
 
 footer .redes h4{
@@ -274,17 +286,39 @@ footer .redes h4{
 
 .redes a span{
     color: #fff;
+
 }
 
+.redes a span{
+    color: #fff;
+}
+.developers{
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content:space-evenly;
+}
+.developers p{
+    text-align: center;
+}
 
 /* -------------------------------------------------------------------------- */
 
 /* Hoja de contacto */
 .contacto{
     margin-top: 1rem;
+    
+}
+
+.formu{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
 }
 
 .formularioContacto{
+    width: 95%;
     text-align: center;
 }
 
@@ -463,6 +497,17 @@ input[type=number] { -moz-appearance:textfield; }
 
   /* hoja nosotros */
 
+
+  .aboutme section article h2{
+    font-size: 2.3rem;
+  }
+
+  .aboutme p{
+    line-height: 2rem;
+    font-size: 1.3rem;
+  }
+
+
   .card-lg{
     height: auto;
   }
@@ -473,4 +518,177 @@ input[type=number] { -moz-appearance:textfield; }
   .card-lg h2{
     text-align: center;
     margin: 2rem 0;
+
   }
+  @media screen and (min-width: 453px){
+        
+    .titulo{
+            font-size: 1.5rem;
+        }
+
+        .containerSlider{
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+           }
+        
+           .sliderSection{
+            width: 22.5%;
+           }
+
+           .oferta{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+        
+        }
+
+        .oferta  img{
+            width: 100%;
+        }
+
+        .formu{
+            justify-content: space-between;
+        }
+
+        .developers{
+            width: 70%;
+        }
+
+       .cmap{
+        width: 45%;
+        margin: 0.5rem 1rem;
+        display: inline-block;
+       }
+}
+
+
+/* Estilo Escritorio */
+
+@media screen and (min-width: 1000px){
+    .logo{
+        transition: all .5s;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .menu{
+        width: 65%;
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .menu li a{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .titulo{
+        font-size: 2.5rem;
+    }
+    .subTitulo{
+        font-size: 1.5rem;
+    }
+
+   .slider-frame{
+    display: none;
+   }
+   .containerSlider{
+    width: 30%;
+   }
+   .sliderSection{
+    width: 21%;
+   }
+
+   .oferta  img{
+    width: 50%;
+}
+
+.servicios h2{
+    font-size: 2.5rem;
+}
+
+.serviz h3{
+    font-size: 1.5rem;
+}
+
+.abrirP p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+   .formu{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.5 3rem;
+    text-align: center;
+   }
+
+   .formularioContacto{
+    display: inline-block;
+    width: 45%;
+    margin: 0.5rem 1rem;
+   }
+
+   .cmap{
+    width: 30%;
+   }
+
+   .imgder{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+   }
+
+   .imagega{
+    width: 10%;
+   }
+   
+   .imagega figcaption {
+    left: 10%;
+    top: 10%;
+   }
+   .imagega.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .imagega.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .aboutme section article h2{
+    font-size: 2.5rem;
+  }
+
+  .aboutme p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .developers{
+    width: 40%;
+}
+
+}
+
+  }
+
